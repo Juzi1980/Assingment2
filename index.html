@@ -1,0 +1,232 @@
+<doctype! html>
+<head>
+	<style>
+	
+    h2 {
+    	margin-top: 20px;
+    	margin-bottom: 40px;
+    }
+    .row {
+	    width: 100%;	  	    
+    }
+    .box{
+    	background-color: gray;
+    	margin: 10px;
+    	border-style: solid;
+    	border-color: black;
+    	border-width: 3px;
+
+
+    }
+    body {
+    	margin-left: 10px;
+    	margin-right: 10px;
+    	width:  100%;
+
+    }
+    .text {
+    	background-color: gray;
+    	margin-top: 0px;
+    	margin-bottom: 0px;
+    	padding-left: 10px;
+    	
+    }
+    #chicken {
+    	background-color: lightpink; 
+    	margin-top: -3px;
+    	margin-right: -3px;
+    	margin-bottom: 0px;
+    	text-align: center;
+    	width:  100px;
+    	border-style: solid;
+    	border-color: black;
+    	border-width: 3px;
+    	float:  right;
+
+    	
+
+    }
+    #beef {
+    	background-color: darkred;
+    	margin-top: -3px;
+    	margin-right: -3px;
+    	margin-bottom: 0px;
+    	text-align: center;
+    	color: white;
+    	width:  100px;
+    	border-style: solid;
+    	border-color: black;
+    	border-width: 3px;
+    	float: right;
+    	
+    }
+    #sushi {
+    	background-color: lightyellow;
+    	margin-top: -3px;
+    	margin-right: -3px;
+    	margin-bottom: 0px;
+    	text-align: center;
+    	width:  100px;
+    	border-style: solid;
+    	border-color: black;
+    	border-width: 3px;
+    	float:  right;
+    }
+    
+
+    /*** Desktop ***/
+    @media (min-width: 992px) {
+	    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		float: left;
+		
+			}
+	.col-md-1 {
+		width:  8.33%;
+	}
+	.col-md-2 {
+		width:  16.66%;
+	}
+	.col-md-3 {
+		width:  25%;
+	}
+	.col-md-4 {
+		width:  33%;
+	}
+	.col-md-5 {
+		width:  8.33%;
+	}
+	.col-md-6 {
+		width:  41.66%;
+	}
+	.col-md-7 {
+		width:  58.33%;
+	}
+	.col-md-8 {
+		width:  66.66%;
+	}
+	.col-md-9 {
+		width:  74.99%;
+	}
+	.col-md-10 {
+		width:  83.33%;
+	}
+	.col-md-11 {
+		width:  91.66%;
+	}
+	.col-md-12 {
+		width:  100%;
+	}
+    }
+    /*** Tablet ***/
+    @media (min-width: 768px) and (max-width: 991px) {
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: left;
+		
+	}
+	.col-sm-1 {
+		width:  8.33%;
+	}
+	.col-sm-2 {
+		width:  16.66%;
+	}
+	.col-sm-3 {
+		width:  25%;
+	}
+	.col-sm-4 {
+		width:  33%;
+	}
+	.col-sm-5 {
+		width:  8.33%;
+	}
+	.col-sm-6 {
+		width:  41.66%;
+	}
+	.col-sm-7 {
+		width:  58.33%;
+	}
+	.col-sm-8 {
+		width:  66.66%;
+	}
+	.col-sm-9 {
+		width:  74.99%;
+	}
+	.col-sm-10 {
+		width:  83.33%;
+	}
+	.col-sm-11 {
+		width:  91.66%;
+	}
+	.col-sm-12 {
+		width:  100%;
+	}
+    }
+    /*** Mobile ***/
+    @media (max-width: 767px) {
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+		float: left;
+		
+	}
+	.col-xs-1 {
+		width:  8.33%;
+	}
+	.col-xs-2 {
+		width:  16.66%;
+	}
+	.col-xs-3 {
+		width:  25%;
+	}
+	.col-xs-4 {
+		width:  33%;
+	}
+	.col-xs-5 {
+		width:  8.33%;
+	}
+	.col-xs-6 {
+		width:  41.66%;
+	}
+	.col-xs-7 {
+		width:  58.33%;
+	}
+	.col-xs-8 {
+		width:  66.66%;
+	}
+	.col-xs-9 {
+		width:  74.99%;
+	}
+	.col-xs-10 {
+		width:  83.33%;
+	}
+	.col-xs-11 {
+		width:  91.66%;
+	}
+	.col-xs-12 {
+		width:  100%;
+	}
+}
+    </style>
+</head>
+<body>
+	<h2 align="center">Our Menu</h2>
+<div class="row">
+	<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="box">
+			<p id="chicken">Chicken</p><br>
+			<p class="text">Why did the chicken run across the road?
+            To get to the other side faster. Why didn’t the chicken cross the road?
+            Because there was a KFC on the other side.</p>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="box">
+			<p id="beef">Beef</p><br>
+	        <p class="text">1. Why are cows such great dancers? They have all the best moooves! 2. What did the cow tell the butcher? Please stop, or else we're gonna have some beef. 3. Where would you find a cow who's having a really bad day? At McDonalds.</p>
+	    </div>
+	</div>
+	<div class="col-md-4 col-sm-10 col-xs-12">
+		<div class="box">
+			<p id="sushi">Sushi</p><br>
+		    <p class="text">I saw a 50% off sign on a sushi restaurant today. Sounds fishy to me. What is the most suspenseful sushi? A drum roll. My girlfriend hated my obsession with Japanese food, Sushi left me.</p>
+	    </div>
+	</div>
+</div>
+</body>
